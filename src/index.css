@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --echo-primary: #16a34a;
+  --echo-accent: #facc15;
+  --echo-bg: #f7fdf9;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #eef6f0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #14261a;
+}
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+#root {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 0 60px rgba(0,0,0,0.08);
+}
+
+.leaflet-container { font-family: inherit; }
+.leaflet-pane, .leaflet-top, .leaflet-bottom { z-index: 400 !important; }
